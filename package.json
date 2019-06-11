@@ -1,0 +1,41 @@
+{
+  "name": "multipronged",
+  "version": "0.1.0",
+  "description": "Allows `connect` usage with arrays of middleware",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mocha --require test/support/env --reporter spec --bail --check-leaks test/",
+    "test-cov": "nyc --reporter=html --reporter=text npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brettz9/multipronged.git"
+  },
+  "keywords": [
+    "framework",
+    "web",
+    "middleware",
+    "connect",
+    "rack"
+  ],
+  "author": "Brett Zamir",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brettz9/multipronged/issues"
+  },
+  "homepage": "https://github.com/brettz9/multipronged#readme",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "connect": "^3.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2"
+  }
+}
